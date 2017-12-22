@@ -6,17 +6,17 @@
 
     <services>
 
-        <service id="goaop.command.warmup" public="false" class="Go\Symfony\GoAopBundle\Command\CacheWarmupCommand">
+        <service id="goaop.command.warmup" public="true" class="Go\Symfony\GoAopBundle\Command\CacheWarmupCommand">
             <argument type="service" id="goaop.aspect.kernel" />
             <tag name="console.command" />
         </service>
 
-        <service id="goaop.command.debug_advisor" public="false" class="Go\Symfony\GoAopBundle\Command\DebugAdvisorCommand">
+        <service id="goaop.command.debug_advisor" public="true" class="Go\Symfony\GoAopBundle\Command\DebugAdvisorCommand">
             <argument type="service" id="goaop.aspect.kernel" />
             <tag name="console.command" />
         </service>
 
-        <service id="goaop.command.debug_aspect" public="false" class="Go\Symfony\GoAopBundle\Command\DebugAspectCommand">
+        <service id="goaop.command.debug_aspect" public="true" class="Go\Symfony\GoAopBundle\Command\DebugAspectCommand">
             <argument type="service" id="goaop.aspect.kernel" />
             <tag name="console.command" />
         </service>
